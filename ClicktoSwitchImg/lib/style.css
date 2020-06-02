@@ -1,0 +1,7 @@
+.bt{
+  width: 100px;
+  height: 100px;
+  background: url(../src/icon_00.png);
+  float: left;
+  margin: 20px;
+}

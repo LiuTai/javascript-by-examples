@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Click to switch images</title>
+  <link rel="stylesheet" type="text/css" href="./lib/style.css">
+</head>
+
+<body>
+  <div class="bt"></div>
+  <div class="bt"></div>
+  <script type="text/javascript">
+    let currentImgs = document.getElementsByClassName('bt');
+    
+    for(let img of currentImgs){
+      img.src = './src/icon_00.png';
+      img.isShow = true;
+      img.onclick = () => {
+        img.isShow = !img.isShow;
+        img.style.backgroundImage = 
+        img.isShow ? 'url(./src/icon_00.png)' : 'url(./src/icon_01.png)';
+      
+      }
+    }
+
+    // for (var i=0; i<currentImgs.length; i++) {
+    //   currentImgs[i].src = './src/icon_00.png';
+    //   currentImgs[i].isShow = true;
+    //   console.log(typeof(currentImgs[i]))
+    //   currentImgs[i].onclick = function(){
+    //     // true => false
+    //     // false => true
+    //     this.isShow = !this.isShow;
+    //     this.style.backgroundImage = 
+    //     this.isShow ? 'url(./src/icon_00.png)' : 'url(./src/icon_01.png)';
+    //   }
+    // }
+  </script>
+</body>
+
+</html>
