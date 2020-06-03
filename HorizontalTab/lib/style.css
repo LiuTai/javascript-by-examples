@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#main{
+  width: 340px;
+  height: 330px;
+  border: 1px solid grey;
+  margin: 30px auto;
+}
+.title{
+  height: 40px;
+  line-height: 40px;
+}
+.title a{
+  width: 110px;
+  float: left;
+  
+}
