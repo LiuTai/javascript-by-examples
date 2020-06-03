@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html>
+  <head>
+    <style type="text/css">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+    #box{
+				width: 800px;
+				height: 530px;
+				background: gray;
+				text-align: center;
+				margin: 50px auto;
+				position: relative;
+			}
+      #box .title{
+				color: white;
+				line-height: 30px;
+				font-size: 20px;
+			}
+      #box .bigImg{
+				width: 800px;
+				height: 470px;
+				display: block;
+			}
+			#box .back, #box .next{
+				position: absolute;
+				width: 80px;
+				height: 30px;
+				text-align: center;
+				background: black;
+				color: white;
+				line-height: 30px;
+				text-decoration: none;
+				top: 250px;
+			}
+			#box .back{
+				left: 0;
+			}
+			#box .next{
+				right: 0;
+			}
+			#box .page{
+				height: 30px;
+			}
+			#box .page i{
+				height: 30px;
+				width: 30px;
+				line-height: 30px;
+				text-align: center;
+				display: inline-block;
+				background: gray;
+				color: white;
+				border-radius: 15px;
+				margin: 0 4px;
+				font-size: 20px;
+				font-style: normal;
+			}
+			#box .page .active{
+				background: black;
+			}
+			#box .thumbnail{
+				width: 140px;
+				height: 80px;
+				position: absolute;
+				bottom: 30px;
+				left: 330px;
+				display: none;
+			}
+    </style>
+    <script src="lib/script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="box"> 
+      <h3 class="title"></h3>
+      <img class="bigImg"/>
+      <a class="back"><-</a>
+      <a class="next"> -></a>
+      <p class="page"> </p>
+      <img class="thumbnail">
+    </div>
+    <script>slider()</script>
+  </body>
+</html>
